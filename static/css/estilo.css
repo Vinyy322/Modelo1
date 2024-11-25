@@ -1,0 +1,114 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout Principal */
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10vw;
+    width: 100vw;
+    height: 10vw;
+    background-color: rgb(100, 100, 100);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5vh;
+    background-color: rgb(170, 170, 170);
+}
+
+/* Tabelas e Listas */
+table, thead, tbody {
+    width: 80%;
+}
+
+tr, li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 6vh;
+    border-bottom: 2px solid black;
+}
+
+th, td {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-width: 10vw;
+}
+
+/* Botões */
+.btn, .btnv {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    background-color: rgb(135, 207, 250);
+}
+
+.btn:hover {
+    background-color: rgb(70, 154, 203);
+    border-color: rgba(78, 75, 75, 0.5);
+}
+
+.btnv {
+    background-color: rgb(250, 135, 135);
+}
+
+.btnv:hover {
+    background-color: rgb(203, 70, 70);
+    border-color: rgba(78, 75, 75, 0.5);
+}
+
+/* Listas */
+ul {
+    list-style: none;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 45%;
+    padding: 5vh;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    color: aliceblue;
+}
+
+form > p {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Alinhamento Extra */
+.esquerda, .direita, .btnacesso {
+    display: flex;
+    align-items: center;
+}
+
+.btnacesso {
+    height: 100%;
+}

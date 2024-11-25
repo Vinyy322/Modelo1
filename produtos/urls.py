@@ -1,8 +1,9 @@
-from django.urls import path
+from django.urls import include, path
 from .views import CategoriaListView, CategoriaCreateView, CategoriaUpdateView, CategoriaDeleteView, ProdutoListView, ProdutoCreateView, ProdutoUpdateView, ProdutoDeleteView
 
 
 urlpatterns = [
+    path('', include('movimentacao.urls')),
     # URLs para Categoria
     path('categorias/', CategoriaListView.as_view(), name='categoria_list'),
     path('categorias/nova/', CategoriaCreateView.as_view(), name='categoria_create'),

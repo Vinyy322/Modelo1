@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login do sistema</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/log.css' %}">
+
+</head>
+<body>
+    <div class="left">
+        texto
+    </div>
+    <div class="right">
+        <div class="log">
+            <h2>Login</h2>
+            <form action="{% url "login" %}" method = "post" >
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type = "submit">Enter</button>
+            </form>
+            {%if form.erros%}
+            <p>usuario ou senha invalido<p>
+            {% endif %}
+        </div>
+    </fiv>
+    
+
+</body>
+</html>
